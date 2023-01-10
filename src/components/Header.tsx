@@ -1,16 +1,33 @@
-import { Box, Img } from "@chakra-ui/react";
+import { Flex, Grid, Image } from "@chakra-ui/react";
 
 export default function Header() {
     return (
-        <Box
+        <Flex
             as="header"
+            bg="white"
             w="100vw"
-            h={100}
-            display="flex"
-            alignContent="center"
-            justifyContent="center"
+            h={["50px", "100px"]}
+            align="center"
+            justify="center"
         >
-            <Img src="/logo.svg" w={184} />
-        </Box>
+            <Grid
+                h="100%"
+                mx="auto"
+                w="100%"
+                maxW="1160px"
+                alignItems="center"
+                justifyContent="center"
+                templateColumns="repeat(3, 1fr)"
+            >
+                <Image
+                    w={["81px", "184px"]}
+                    src="/logo.svg"
+                    alt="Logo Wordltrip"
+                    justifySelf="center"
+                    gridColumn={2}
+                />
+
+            </Grid>
+        </Flex>
     )
 }

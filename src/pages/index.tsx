@@ -1,6 +1,9 @@
-import { Box, Divider, Img, Text } from "@chakra-ui/react";
+import { Box, Divider, Image, Text, Flex } from "@chakra-ui/react";
+import { Banner } from "../components/Banner";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
+import { Topic } from "../components/Topic";
+import { TopicContainer } from "../components/Topic/TopicContainer";
 
 export default function Home () {
   return (
@@ -10,149 +13,18 @@ export default function Home () {
       <Box
         as="main"
       >
-        <Box
-          w="100vw"
-          h={335}
-          as="section"
-          display="flex"
-          justifyContent="space-between"
-          px={140}
-          py={75}
-          background="url('home/stars-background.png')"
-          position="relative"
-        >
-          <Box
-            as="div"
-            display="flex"
-            flexDir="column"
-            justifyContent="space-between"
-            color="text.light"
+        
+        <Banner />
 
-          >
-            <Text
-              as="h1"
-              fontSize={38}
-              fontWeight="500"
-            >
-              5 Continentes,<br />infinitas possibilidades.
-            </Text>
-
-            <Text
-              as="p"
-              fontSize={20}
-              fontWeight="400"
-            >
-              Chegou a hora de tirar do papel a viagem que você <br /> sempre sonhou.
-            </Text>
-          </Box>
-
-          <Img
-            src="home/airplane.png"
-            position="absolute"
-            left="65%"
-          />
-        </Box>
-
-        <Box
-          as="section"
-          mt="114px"
+        <Flex
           maxW={1160}
-          display="flex"
           justifyContent="space-between"
           marginInline="auto"
-          color="text.dark"
+          color="gray.700"
         >
-          <Box
-            as="div"
-            h={145}
-            display="flex"
-            flexDir="column"
-            alignItems="center"
-          >
-            <Img src="home/cocktail.svg"/>
-            <Text
-              as="span"
-              mt="24px"
-              fontSize={24}
-              fontWeight={600}
-            >
-              vida noturna
-            </Text>
-          </Box>
+          <TopicContainer />
 
-          <Box
-            as="div"
-            h={145}
-            display="flex"
-            flexDir="column"
-            alignItems="center"
-          >
-            <Img src="home/surf.svg"/>
-            <Text
-              as="span"
-              mt="24px"
-              fontSize={24}
-              fontWeight={600}
-            >
-              praia
-            </Text>
-          </Box>
-
-          <Box
-            as="div"
-            h={145}
-            display="flex"
-            flexDir="column"
-            alignItems="center"
-          >
-            <Img src="home/building.svg"/>
-            <Text
-              as="span"
-              mt="24px"
-              fontSize={24}
-              fontWeight={600}
-            >
-              moderno
-            </Text>
-          </Box>
-
-          <Box
-            as="div"
-            h={145}
-            display="flex"
-            flexDir="column"
-            alignItems="center"
-          >
-            <Img src="home/museum.svg"/>
-            <Text
-              as="span"
-              mt="24px"
-              fontSize={24}
-              fontWeight={600}
-            >
-              clássico
-            </Text>
-          </Box>
-
-          <Box
-            as="div"
-            h={145}
-            display="flex"
-            flexDir="column"
-            alignItems="center"
-          >
-            <Img src="home/earth.svg"/>
-            <Text
-              as="span"
-              mt="24px"
-              fontSize={24}
-              fontWeight={600}
-            >
-              e mais...
-            </Text>
-          </Box>
-
-        </Box>
+        </Flex>
 
         <Divider
           my="80px"
