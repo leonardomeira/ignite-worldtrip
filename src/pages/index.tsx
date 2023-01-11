@@ -1,8 +1,7 @@
-import { Box, Divider, Image, Text, Flex } from "@chakra-ui/react";
+import { Box, Divider, Image, Text, Flex, Heading } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
-import { Topic } from "../components/Topic";
 import { TopicContainer } from "../components/Topic/TopicContainer";
 
 export default function Home () {
@@ -27,11 +26,11 @@ export default function Home () {
         </Flex>
 
         <Divider
-          my="80px"
+          my={["30px", "30px", "80px"]}
           borderWidth="1px"
           w="90px"
           marginInline="auto"
-          borderColor="text.dark"
+          borderColor="gray.700"
         />
 
         <Box
@@ -43,15 +42,15 @@ export default function Home () {
           gap="40px"
           mb="30px"
         >
-          <Text
+          <Heading
             as="h1"
             color="text.dark"
             textAlign="center"
-            fontSize={36}
+            fontSize={["1.25rem", "1.25rem", "1.5rem", 36]}
             fontWeight="500"
           >
             Vamos nessa? <br /> Então escolha seu continente
-          </Text>
+          </Heading>
 
           <Carousel />
         </Box>
