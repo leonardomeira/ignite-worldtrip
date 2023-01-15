@@ -10,7 +10,7 @@ interface SlideProps {
 
 export function Slide({ href, bg, heading, text }: SlideProps ) {
     return (
-        <Link href={href}>
+        <Link href={`/continent/${href}`}>
             <a>
                 <Flex
                     as="div"

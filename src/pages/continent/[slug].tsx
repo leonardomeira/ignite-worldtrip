@@ -1,8 +1,8 @@
 import { Flex } from "@chakra-ui/react";
-import { Cities } from "../components/Cities";
-import { Content } from "../components/Content";
-import { ContinentBanner } from "../components/ContinentBanner";
-import { Header } from "../components/Header";
+import { Cities } from "../../components/Cities";
+import { Content } from "../../components/Content";
+import { ContinentBanner } from "../../components/ContinentBanner";
+import { Header } from "../../components/Header";
 
 export default function Continent() {
     return (
@@ -12,7 +12,7 @@ export default function Continent() {
 
             <Flex
                 direction="column"
-                maxW="1160px"
+                maxW="1480px"
                 mx="auto"
                 mb="10"
                 px="1rem"

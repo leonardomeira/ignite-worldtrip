@@ -13,7 +13,7 @@ export function Cities() {
             </Heading>
 
             <Grid
-                templateColumns={["1fr", "1fr 1fr", "repeat(3, 1fr)", "repeat(4, 1fr)"]}
+                templateColumns={["1fr", "1fr 1fr", "repeat(3, 1fr)", "repeat(4, 1fr)", "repeat(4, 1fr)", "repeat(5, 1fr)"]}
                 gap={["20px", "45px"]}
                 alignItems="center"
                 justifyContent="center"
