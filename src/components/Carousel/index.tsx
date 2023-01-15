@@ -6,7 +6,7 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 
 import { Slide } from './Slide';
 
-export default function Carousel() {
+export function Carousel() {
 
     SwiperCore.use([Autoplay]);
 

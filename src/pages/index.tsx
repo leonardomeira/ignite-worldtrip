@@ -1,7 +1,7 @@
 import { Box, Divider, Image, Text, Flex, Heading } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
-import Carousel from "../components/Carousel";
-import Header from "../components/Header";
+import { Carousel } from "../components/Carousel";
+import { Header } from "../components/Header";
 import { TopicContainer } from "../components/Topic/TopicContainer";
 
 export default function Home () {
